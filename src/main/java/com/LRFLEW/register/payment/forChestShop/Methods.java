@@ -38,15 +38,9 @@ public class Methods {
      * Implement all methods along with their respective name & class.
      */
     private static void _init() {
-//        addMethod("iConomy", new com.LRFLEW.register.payment.forChestShop.methods.iCo6());
-//        addMethod("iConomy", new com.LRFLEW.register.payment.forChestShop.methods.iCo5());
-//        addMethod("iConomy", new com.LRFLEW.register.payment.forChestShop.methods.iCo4());
-//        addMethod("BOSEconomy", new com.LRFLEW.register.payment.forChestShop.methods.BOSE6());
-//        addMethod("BOSEconomy", new com.LRFLEW.register.payment.forChestShop.methods.BOSE7());
         addMethod("Essentials", new com.LRFLEW.register.payment.forChestShop.methods.EE17());
         addMethod("ZCore", new com.LRFLEW.register.payment.forChestShop.methods.ZCoreEconomy());
-        addMethod("ZCore", new com.LRFLEW.register.payment.forChestShop.methods.AurumEconomy());
-//        addMethod("Currency", new com.LRFLEW.register.payment.forChestShop.methods.MCUR());
+        addMethod("Aurum", new com.LRFLEW.register.payment.forChestShop.methods.AurumEconomy());
         Dependencies.add("MultiCurrency");
     }
 

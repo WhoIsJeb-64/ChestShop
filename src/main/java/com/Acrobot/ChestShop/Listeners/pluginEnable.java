@@ -10,6 +10,7 @@ import com.LRFLEW.register.payment.forChestShop.Methods;
 import com.griefcraft.lwc.LWCPlugin;
 import com.nijikokun.bukkit.Permissions.Permissions;
 import info.somethingodd.bukkit.OddItem.OddItem;
+import org.bukkit.Bukkit;
 import org.bukkit.event.server.PluginEnableEvent;
 import org.bukkit.event.server.ServerListener;
 import org.bukkit.plugin.Plugin;
@@ -21,7 +22,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 public class pluginEnable extends ServerListener {
 
     public void onPluginEnable(PluginEnableEvent event) {
-        if (!Methods.hasMethod() && Methods.setMethod(ChestShop.pm)) {
+        if (!Methods.hasMethod() && Methods.setMethod(Bukkit.getServer().getPluginManager())) {
             Economy.economy = Methods.getMethod();
             System.out.println(ChestShop.chatPrefix + Economy.economy.getName() + ' ' + Economy.economy.getVersion() + " loaded.");
         }
