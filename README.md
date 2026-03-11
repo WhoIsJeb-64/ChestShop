@@ -1,2 +1,4 @@
 # ChestShop
-A version of ChestShop updated for BetaMC
+
+---
+### A version of ChestShop updated to work with Aurum
