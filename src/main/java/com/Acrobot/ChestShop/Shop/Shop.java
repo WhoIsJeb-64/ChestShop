@@ -100,7 +100,7 @@ public class Shop {
         String account = getOwnerAccount();
         if (!account.isEmpty() && Economy.hasAccount(account, world)) Economy.add(account, buyPrice, world);
 
-        Economy.substract(playerName, buyPrice, world);
+        Economy.subtract(playerName, buyPrice, world);
 
         if (!isAdminShop()) chest.removeItem(stock, durability, stockAmount);
 
@@ -164,7 +164,7 @@ public class Shop {
         }
 
 
-        if (accountExists) Economy.substract(account, sellPrice, world);
+        if (accountExists) Economy.subtract(account, sellPrice, world);
         if (!isAdminShop()) chest.addItem(stock, stockAmount);
 
         Economy.add(player.getName(), sellPrice, world);

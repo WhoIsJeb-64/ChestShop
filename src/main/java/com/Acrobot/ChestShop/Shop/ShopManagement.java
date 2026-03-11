@@ -89,7 +89,7 @@ public class ShopManagement {
         String account = getOwnerAccount(owner);
         if (!account.isEmpty() && Economy.hasAccount(account, world)) Economy.add(account, buyPrice, world);
 
-        Economy.substract(playerName, buyPrice, world);
+        Economy.subtract(playerName, buyPrice, world);
 
         String formattedPrice = Economy.formatBalance(buyPrice);
         if (Config.getBoolean(Property.SHOW_TRANSACTION_INFORMATION_CLIENT)) {

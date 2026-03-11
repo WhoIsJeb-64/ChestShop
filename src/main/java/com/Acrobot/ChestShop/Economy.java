@@ -19,7 +19,7 @@ public class Economy {
         economy.getAccount(uLongName.getName(name), world).add(amount, world);
     }
 
-    public static void substract(String name, float amount, World world) {
+    public static void subtract(String name, float amount, World world) {
         economy.getAccount(uLongName.getName(name), world).subtract(amount, world);
     }
 

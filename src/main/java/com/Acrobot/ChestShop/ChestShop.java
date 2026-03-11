@@ -23,7 +23,6 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.config.Configuration;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -128,7 +127,7 @@ public class ChestShop extends JavaPlugin {
     private void setupDB() {
         database = new Database(this) {
             protected java.util.List<Class<?>> getDatabaseClasses() {
-                List<Class<?>> list = new ArrayList<Class<?>>();
+                List<Class<?>> list = new ArrayList<>();
                 list.add(Transaction.class);
                 return list;
             }

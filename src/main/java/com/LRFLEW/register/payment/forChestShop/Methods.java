@@ -2,7 +2,6 @@ package com.LRFLEW.register.payment.forChestShop;
 
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,16 +21,16 @@ import java.util.Set;
  *
  * @author: Nijikokun <nijikokun@shortmail.com> (@nijikokun)
  * @copyright: Copyright (C) 2011
- * @license: AOL license <http://aol.nexua.org>
+ * @license: AOL license <<a href="http://aol.nexua.org">...</a>>
  */
 public class Methods {
     private static String version = null;
     private static boolean self = false;
     private static Method Method = null;
     public static String preferred = "";
-    private static Set<Method> Methods = new HashSet<Method>();
-    private static Set<String> Dependencies = new HashSet<String>();
-    private static Set<Method> Attachables = new HashSet<Method>();
+    private static Set<Method> Methods = new HashSet<>();
+    private static Set<String> Dependencies = new HashSet<>();
+    private static Set<Method> Attachables = new HashSet<>();
 
     static { _init(); }
 
@@ -46,12 +45,13 @@ public class Methods {
 //        addMethod("BOSEconomy", new com.LRFLEW.register.payment.forChestShop.methods.BOSE7());
         addMethod("Essentials", new com.LRFLEW.register.payment.forChestShop.methods.EE17());
         addMethod("ZCore", new com.LRFLEW.register.payment.forChestShop.methods.ZCoreEconomy());
+        addMethod("ZCore", new com.LRFLEW.register.payment.forChestShop.methods.AurumEconomy());
 //        addMethod("Currency", new com.LRFLEW.register.payment.forChestShop.methods.MCUR());
         Dependencies.add("MultiCurrency");
     }
 
     /**
-     * Used by the plugin to setup version
+     * Used by the plugin to set up version
      *
      * @param v version
      */
@@ -123,7 +123,7 @@ public class Methods {
     }
 
     /**
-     * Checks Plugin Class against a multitude of checks to verify it's usability
+     * Checks Plugin Class against a multitude of checks to verify its usability
      * as a payment method.
      *
      * @return <code>boolean</code> True on success, False on failure.
@@ -192,7 +192,7 @@ public class Methods {
     }
 
     /**
-     * Verify is a plugin is disabled, only does this if we there is an existing payment
+     * Verify is a plugin is disabled, only does this if there's an existing payment
      * method initialized in Register.
      *
      * @param method Plugin data from bukkit, Internal Class file.

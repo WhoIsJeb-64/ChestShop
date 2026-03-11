@@ -7,7 +7,6 @@ import com.johnymuffin.beta.fundamentals.api.FundamentalsAPI;
 import com.projectposeidon.api.PoseidonUUID;
 import org.bukkit.World;
 import org.bukkit.plugin.Plugin;
-
 import java.util.UUID;
 
 import static com.johnymuffin.beta.fundamentals.util.Utils.getUUIDFromUsername;

@@ -139,7 +139,7 @@ public class signChange extends BlockListener {
                 return;
             }
 
-            Economy.substract(player.getName(), shopCreationPrice, event.getBlock().getWorld());
+            Economy.subtract(player.getName(), shopCreationPrice, event.getBlock().getWorld());
         }
 
         if (Config.getBoolean(Property.PROTECT_SIGN_WITH_LWC)) {
