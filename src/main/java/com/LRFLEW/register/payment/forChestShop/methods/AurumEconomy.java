@@ -24,7 +24,7 @@ public class AurumEconomy implements Method {
     }
 
     public int fractionalDigits() {
-        return 1;
+        return 2;
     }
 
     public String format(double amount) {
